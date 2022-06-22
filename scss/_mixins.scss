@@ -1,0 +1,12 @@
+@mixin responsive_section{
+    @media (min-width: 320px ) and (max-width:425px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 425px ) and (max-width:1024px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+}

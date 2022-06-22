@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .navbar-expand-lg .navbar-collapse {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.nav-item a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+.nav-item a:hover {
+  color: #01a3a4;
+}
+
+.about {
+  background: url(/assets/img/bg_header.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.block_information {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .block_information {
+    flex-direction: column;
+  }
+}
+
+.card {
+  height: 200px;
+  margin: 15px;
+  transition: all 0.33s ease;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.card .card-title {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.card .card-title-img {
+  width: 30px;
+  margin-left: 15px;
+}
+.card:hover {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 1px 1px 7px 1px #bdbdbd;
+  box-shadow: 1px 1px 7px 1px #bdbdbd;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 680px) {
+  .card {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+
+.col {
+  margin-left: -15px;
+}
+
+h1, h2, h3, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1024px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.caption_block {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=main.css.map */
