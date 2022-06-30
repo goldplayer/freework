@@ -72,22 +72,38 @@
     margin-top: 15px;
   }
 }
+.card .card-body .description {
+  margin-top: 25px;
+}
+.card .card-footer {
+  text-align: right;
+}
+.card .card-footer button {
+  background-color: transparent;
+  border: 1px solid #48BEFF;
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
+}
 
 .col {
   margin-left: -15px;
 }
 
 .box-list .video {
-  width: 100%;
+  margin: auto;
 }
 
 .control_tabs {
   text-align: center;
 }
 .control_tabs button {
-  background-color: rgba(72, 190, 255, 0.6);
+  background-color: rgba(72, 190, 255, 0.4);
   border: 1px solid transparent;
-  padding: 12px 25px;
+  padding: 7px 25px;
+}
+.control_tabs button i {
+  margin-left: 10px;
+  color: #fff;
 }
 .control_tabs .mixitup-control-active {
   color: red;

@@ -45,6 +45,21 @@
         margin-right: 0;
         margin-top: 15px;
     } 
+
+    .card-body{
+        .description{
+            margin-top: 25px;
+        }
+    }
+    .card-footer{
+       text-align: right;
+       button{
+        background-color: transparent;
+        border: 1px solid #48BEFF;
+        padding: 5px 15px 5px 15px  ;
+        font-size: 12px;
+       }
+    }
 }
 
 .col{
@@ -55,11 +70,8 @@
 
 .box-list{
 
+    overflow-y: scroll;
 
-
-    .video{
-        width: 100%;
-    }
 }
 
 .control_tabs{
@@ -68,9 +80,13 @@
     text-align: center;
 
     button{
-        background-color: rgba($color: #48BEFF, $alpha: 0.6);
+        background-color: rgba($color: #48BEFF, $alpha: 0.4);
         border: 1px solid transparent;
-        padding:12px 25px;
+        padding:7px 25px;
+        i{
+            margin-left: 10px;
+            color: #fff;
+        }
     }
 
     .mixitup-control-active{
