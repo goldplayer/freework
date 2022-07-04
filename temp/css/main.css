@@ -85,12 +85,8 @@
   font-size: 12px;
 }
 
-.col {
-  margin-left: -15px;
-}
-
-.box-list .video {
-  margin: auto;
+.box-list {
+  overflow-y: scroll;
 }
 
 .control_tabs {
