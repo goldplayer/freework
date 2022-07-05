@@ -22,6 +22,38 @@ section{
     background: url('/assets/img/bg.png') no-repeat;
     background-size: cover;
     background-position: 0 0;
-    height: 100vh;
+    padding-bottom: 210px;
+    height: 100%;
+
+
+    .paradise-welcome{
+        padding-top: 150px;
+
+        .col-lg-6{
+            margin-top: 5%;
+            h1{
+                font-size: 50px;
+                @media (min-width:10px) and (max-width:426px){
+                    font-size: 45px;
+                }
+                font-weight: 600;
+            }
+            p{
+                font-size: 24px;
+                padding-top: 30px;
+            }
+        }
+    }
 }
 
+.caption-block{
+    h2{
+        font-size: 35px;
+    }
+
+    .txt_block{
+        font-size: 18px;
+        
+    }
+
+}
