@@ -1,32 +1,29 @@
-.navbar-expand-lg .navbar-collapse{
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    background-color: transparent;
-
-    @media (min-width: 320px) and (max-width:425px){
-        font-size: 14px;
-        font-weight: bold;
+.navigator{
+    @media(min-width: 10px)and(max-width:426px){
+        display: none;
     }
-
-
-}
-
-.navbar-brand{
-
-    img{
-        width: 50px;
-    }
-}
-.nav-item{
-    a{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 16px;
-        color: $default;
-        &:hover{
-            color: #01a3a4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &_list{
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        padding-left: 0 !important;
+    
+        &_item{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            border-bottom: 1px solid transparent;
+            padding: 0px;
+            transition: all 0.33s ease;
+            &:hover{
+                border-bottom: 1px solid $default;
+                cursor: pointer;
+            }
         }
     }
-
 }
+
 

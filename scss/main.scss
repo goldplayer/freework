@@ -3,6 +3,7 @@
 @import './mixins';
 @import './navbar';
 @import './about';
+@import './burger';
 
 h1,h2,h3,h3,h4,h5,h6{
     padding: 0;
@@ -16,8 +17,11 @@ section{
     @include responsive_section;
 }
 
-
-.caption_block{
-    margin-bottom: 20px;
-    margin-top: 20px;
+.first_block{
+    padding-top: 0;
+    background: url('/assets/img/bg.png') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
 }
+

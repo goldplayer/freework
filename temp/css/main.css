@@ -1,108 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  background-color: transparent;
+.navigator {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-@media (min-width: 320px) and (max-width: 425px) {
-  .navbar-expand-lg .navbar-collapse {
-    font-size: 14px;
-    font-weight: bold;
+@media (min-width: 10px) and (max-width: 426px) {
+  .navigator {
+    display: none;
   }
 }
-
-.navbar-brand img {
-  width: 50px;
+.navigator_list {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding-left: 0 !important;
 }
-
-.nav-item a {
+.navigator_list_item {
+  margin-left: 10px;
+  margin-right: 10px;
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: #000;
-}
-.nav-item a:hover {
-  color: #01a3a4;
-}
-
-.about {
-  background: url(/assets/img/bg_header.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin-top: 0;
-  height: 100vh;
-}
-
-.block_information {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 320px) and (max-width: 425px) {
-  .block_information {
-    flex-direction: column;
-  }
-}
-
-.card {
-  height: 200px;
-  margin: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  padding: 0px;
   transition: all 0.33s ease;
-  background-color: rgba(255, 255, 255, 0.6);
 }
-.card .card-title {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-.card .card-title-img {
-  width: 30px;
-  margin-left: 15px;
-}
-.card:hover {
-  border: 1px solid transparent;
-  -webkit-box-shadow: 1px 1px 7px 1px #bdbdbd;
-  box-shadow: 1px 1px 7px 1px #bdbdbd;
+.navigator_list_item:hover {
+  border-bottom: 1px solid #000;
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 680px) {
-  .card {
-    margin-right: 0;
-    margin-top: 15px;
+
+@media (min-width: 426px) and (max-width: 2400px) {
+  .burger {
+    display: none;
   }
 }
-.card .card-body .description {
-  margin-top: 25px;
-}
-.card .card-footer {
-  text-align: right;
-}
-.card .card-footer button {
-  background-color: transparent;
-  border: 1px solid #48BEFF;
-  padding: 5px 15px 5px 15px;
-  font-size: 12px;
+@media (min-width: 10px) and (max-width: 425px) {
+  .burger {
+    display: block;
+  }
 }
 
-.box-list {
-  overflow-y: scroll;
+.menu_btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  right: 0;
 }
 
-.control_tabs {
+.menu_btn span {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+
+.menu_btn span:nth-of-type(2) {
+  top: 66%;
+}
+
+.menu_btn span:nth-of-type(3) {
+  top: 82%;
+}
+
+.menu_btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu_btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu_btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #FFEFBA;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.navigator_burger_list {
+  font-size: 20px;
   text-align: center;
+  position: relative;
+  top: 150px;
+  left: -30px;
 }
-.control_tabs button {
-  background-color: rgba(72, 190, 255, 0.4);
-  border: 1px solid transparent;
-  padding: 7px 25px;
-}
-.control_tabs button i {
-  margin-left: 10px;
-  color: #fff;
-}
-.control_tabs .mixitup-control-active {
-  color: red;
+.navigator_burger_list_item {
+  margin-top: 15px;
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
@@ -129,8 +136,11 @@ section {
   }
 }
 
-.caption_block {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.first_block {
+  padding-top: 0;
+  background: url("/assets/img/bg.png") no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
