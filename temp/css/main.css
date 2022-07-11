@@ -140,7 +140,7 @@ section {
   padding-top: 0;
   background: url("/assets/img/bg.png") no-repeat;
   background-size: cover;
-  background-position: 0 0;
+  background-position: 0 110%;
   padding-bottom: 210px;
   height: 100%;
 }
@@ -167,7 +167,9 @@ section {
 .caption-block h2 {
   font-size: 35px;
 }
-.caption-block .txt_block {
-  font-size: 18px;
+
+.txt_block {
+  font-size: 16px;
+  padding-top: 28px;
 }
 /*# sourceMappingURL=main.css.map */
